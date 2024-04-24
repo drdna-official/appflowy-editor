@@ -50,7 +50,7 @@ extension EditorStateSelection on EditorState {
     min = 0;
     if (filteredNodes.length > 1) {
       min = _findCloseNode(
-        sortedNodes,
+        filteredNodes,
         0,
         filteredNodes.length - 1,
         (rect) => rect.right <= offset.dx,
